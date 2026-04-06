@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Referanslarımız | Kalicert İSG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">KALİCERT<span>İSG</span></div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Hizmetlerimiz ▼</a>
+                    <div class="dropdown-content">
+                        <a href="is-guvenligi-uzmani.html">İŞ GÜVENLİĞİ UZMANI</a>
+                        <a href="risk-analizi.html">RİSK ANALİZİ & DEĞ.</a>
+                        <a href="acil-durum.html">ACİL DURUM EYLEM PLANI</a>
+                        <a href="temel-isg-egitimi.html">TEMEL İSG EĞİTİMİ</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Bilgiler ▼</a>
+                    <div class="dropdown-content">
+                        <a href="tehlike-sinifi.html">TEHLİKE SINIFINIZI ÖĞRENİN</a>
+                        <a href="mevzuat.html">MEVZUAT</a>
+                        <a href="calisma-suresi.html">ÇALIŞMA SÜRESİ HES.</a>
+                    </div>
+                </li>
+                <li><a href="belgelendirme.html">Belgelendirme</a></li>
+                <li><a href="referanslar.html">Referanslarımız</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="page-hero">
+        <img src="images/refe.jpg" alt="Referanslarımız">
+        <div class="hero-content">
+            <h1>Referanslarımız</h1>
+            <p>Güvenilir iş ortaklarımızla sektörde lider konumdayız</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="referans-grid">
+            <div class="referans-item">KAMSAN KALIP APARAT MAKİNE SAN. VE TİC. LTD.ŞTİ</div>
+            <div class="referans-item">ÇEVRİM Elektrik Makine San. ve Tic.Ltd.Şti.</div>
+            <div class="referans-item">Berta Otomasyon İsmail Öztürk</div>
+            <div class="referans-item">Özbektaş Temizlik Hizmetleri ve gıda san.tic.ltd.şti.</div>
+            <div class="referans-item">Taner Börek</div>
+            <div class="referans-item">VAKAR İNŞ.OTO. TUR.SAN.TİC.LTD.ŞTİ.</div>
+            <div class="referans-item">ÖZÜPEKOĞLU GAYRİMENKUL DANIŞMANLIĞI İNŞ. VE TİC. LTD. ŞTİ.</div>
+            <div class="referans-item">PRENSES CAFE</div>
+            <div class="referans-item">ALFA CNC KALIP SAN.LTD.ŞTİ.</div>
+            <div class="referans-item">BERJAN REKLAM DIŞ.TİC.SAN.LTD.ŞTİ.</div>
+            <div class="referans-item">Fidar Sigorta Ekspertiz Hizmetleri Ltd. Şti.</div>
+            <div class="referans-item">AK Tavukçuluk Tarım Ürünleri Tic. ve San. Ltd. Şti.</div>
+            <div class="referans-item">Altıkulaç Sigorta Aracılık Hizmetleri</div>
+            <div class="referans-item">Hakan Yapı</div>
+            <div class="referans-item">Howmar Gıda Tekstil Mobilya İnşaat İth.İhr.Ltd.Şti.</div>
+            <div class="referans-item">Ulaşhan Tekstil Paz.ve Tic.Ltd.Şti.</div>
+            <div class="referans-item">Naim Et ve Gıda Tic. Ltd.Şti.</div>
+            <div class="referans-item">Aksu tel erezyon kalıp san.tic.ltd.şti.</div>
+            <div class="referans-item">SEAHORSE denizcilik ve mühendislik tic.ltd.şti.</div>
+            <div class="referans-item">2A Toplu Yemek Gıda San. Tic. Ltd. şti.</div>
+            <div class="referans-item">TELBİS YÜZEYBİLİM SINAİ KİMYASALLAR SANAYİİ VE TİC.LTD.ŞTİ.</div>
+            <div class="referans-item">Maltepe sigorta aracılık hiz. ltd. şti</div>
+            <div class="referans-item">İSAM yayıncılık sosyal hizmetler san. ve tic ltd. şti</div>
+            <div class="referans-item">Nursan oto</div>
+            <div class="referans-item">Reel Gayrimenkul İnşaat Tur. Ve Tic. Td. Şti.</div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container"><p>© 2026 Kalicert İş Sağlığı ve Güvenliği | Tüm hakları saklıdır.</p></div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    dropdownBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            if (window.innerWidth <= 992) {
+                e.preventDefault();
+                btn.parentElement.classList.toggle('active');
+            }
+        });
+    });
+</script>
+</body>
+</html>

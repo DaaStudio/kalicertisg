@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Hakkımızda | Kalicert İSG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">KALİCERT<span>İSG</span></div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Hizmetlerimiz ▼</a>
+                    <div class="dropdown-content">
+                        <a href="is-guvenligi-uzmani.html">İŞ GÜVENLİĞİ UZMANI</a>
+                        <a href="risk-analizi.html">RİSK ANALİZİ & DEĞ.</a>
+                        <a href="acil-durum.html">ACİL DURUM EYLEM PLANI</a>
+                        <a href="temel-isg-egitimi.html">TEMEL İSG EĞİTİMİ</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Bilgiler ▼</a>
+                    <div class="dropdown-content">
+                        <a href="tehlike-sinifi.html">TEHLİKE SINIFINIZI ÖĞRENİN</a>
+                        <a href="mevzuat.html">MEVZUAT</a>
+                        <a href="calisma-suresi.html">ÇALIŞMA SÜRESİ HES.</a>
+                    </div>
+                </li>
+                <li><a href="belgelendirme.html">Belgelendirme</a></li>
+                <li><a href="referanslar.html">Referanslarımız</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="page-hero">
+        <img src="images/hakkimizda.jpg" alt="Hakkımızda">
+        <div class="hero-content">
+            <h1>Hakkımızda</h1>
+            <p>20 yılı aşkın tecrübemizle iş sağlığı ve güvenliğinde güvenilir çözüm ortağınız</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about-card" style="padding: 30px; margin-bottom: 40px;">
+            <h2>Biz Kimiz?</h2>
+            <p>Kuruluşumuz, iş güvenliği konularında denetim, yöneticilik, eğitmenlik ve danışmanlık yapmış A, B ve C sınıfı uzman kadrosuyla; İş güvenliği uzmanı hizmetleri, Risk değerlendirmesi, Acil durum eylem planı, Temel iş sağlığı ve güvenliği eğitimleri konularında hizmet vermektedir. Kuruluşumuzun yetkilileriyle görüşüp bu hizmetlere kısa bir süre içinde ulaşabilirsiniz.</p>
+            
+            <div style="display: flex; gap: 20px; flex-wrap: wrap; margin: 30px 0 25px;">
+                <div><strong>📌 Adres</strong><br>Bağdat caddesi No:198/10 Maltepe/İSTANBUL</div>
+                <div><strong>📧 E-posta</strong><br>info@kalicertisg.com</div>
+                <div><strong>📞 Telefon</strong><br>0 (216) 489 08 03</div>
+            </div>
+            
+            <h3>Verdiğimiz Hizmetler</h3>
+            <ul style="margin-left: 20px; margin-top: 12px;">
+                <li>✅ İş Güvenliği Uzmanı Hizmetleri</li>
+                <li>✅ Risk Analizi & Değerlendirme</li>
+                <li>✅ Acil Durum Eylem Planı</li>
+                <li>✅ Sertifikalı Temel İSG Eğitimi</li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container"><p>© 2026 Kalicert İş Sağlığı ve Güvenliği | Tüm hakları saklıdır.</p></div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    dropdownBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            if (window.innerWidth <= 992) {
+                e.preventDefault();
+                btn.parentElement.classList.toggle('active');
+            }
+        });
+    });
+</script>
+</body>
+</html>

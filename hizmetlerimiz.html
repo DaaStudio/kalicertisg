@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Hizmetlerimiz | Kalicert İSG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">KALİCERT<span>İSG</span></div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Hizmetlerimiz ▼</a>
+                    <div class="dropdown-content">
+                        <a href="is-guvenligi-uzmani.html">İŞ GÜVENLİĞİ UZMANI</a>
+                        <a href="risk-analizi.html">RİSK ANALİZİ & DEĞ.</a>
+                        <a href="acil-durum.html">ACİL DURUM EYLEM PLANI</a>
+                        <a href="temel-isg-egitimi.html">TEMEL İSG EĞİTİMİ</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Bilgiler ▼</a>
+                    <div class="dropdown-content">
+                        <a href="tehlike-sinifi.html">TEHLİKE SINIFINIZI ÖĞRENİN</a>
+                        <a href="mevzuat.html">MEVZUAT</a>
+                        <a href="calisma-suresi.html">ÇALIŞMA SÜRESİ HES.</a>
+                    </div>
+                </li>
+                <li><a href="belgelendirme.html">Belgelendirme</a></li>
+                <li><a href="referanslar.html">Referanslarımız</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="page-hero">
+        <img src="images/hizmet.jpg" alt="Hizmetlerimiz">
+        <div class="hero-content">
+            <h1>Hizmetlerimiz</h1>
+            <p>İş sağlığı ve güvenliği ihtiyaçlarınıza özel profesyonel çözümler</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="services-grid">
+            <div class="service-card"><h3>İş Güvenliği Uzmanı</h3><p>A, B, C sınıfı uzman kadrosuyla mevzuata uygunluk.</p><a href="is-guvenligi-uzmani.html" class="btn-small">Detaylar</a></div>
+            <div class="service-card"><h3>Risk Analizi & Değerlendirme</h3><p>Tehlikeleri belirleyip riskleri kontrol altına alın.</p><a href="risk-analizi.html" class="btn-small">Detaylar</a></div>
+            <div class="service-card"><h3>Acil Durum Eylem Planı</h3><p>Yangın, deprem ve acil durumlar için planlama.</p><a href="acil-durum.html" class="btn-small">Detaylar</a></div>
+            <div class="service-card"><h3>Temel İSG Eğitimi</h3><p>Sertifikalı eğitimlerle çalışanları bilinçlendirin.</p><a href="temel-isg-egitimi.html" class="btn-small">Detaylar</a></div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container"><p>© 2026 Kalicert İş Sağlığı ve Güvenliği | Tüm hakları saklıdır.</p></div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    dropdownBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            if (window.innerWidth <= 992) {
+                e.preventDefault();
+                btn.parentElement.classList.toggle('active');
+            }
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Risk Analizi | Kalicert İSG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">KALİCERT<span>İSG</span></div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Hizmetlerimiz ▼</a>
+                    <div class="dropdown-content">
+                        <a href="is-guvenligi-uzmani.html">İŞ GÜVENLİĞİ UZMANI</a>
+                        <a href="risk-analizi.html">RİSK ANALİZİ & DEĞ.</a>
+                        <a href="acil-durum.html">ACİL DURUM EYLEM PLANI</a>
+                        <a href="temel-isg-egitimi.html">TEMEL İSG EĞİTİMİ</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Bilgiler ▼</a>
+                    <div class="dropdown-content">
+                        <a href="tehlike-sinifi.html">TEHLİKE SINIFINIZI ÖĞRENİN</a>
+                        <a href="mevzuat.html">MEVZUAT</a>
+                        <a href="calisma-suresi.html">ÇALIŞMA SÜRESİ HES.</a>
+                    </div>
+                </li>
+                <li><a href="belgelendirme.html">Belgelendirme</a></li>
+                <li><a href="referanslar.html">Referanslarımız</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="page-hero">
+        <img src="images/s2.jpg" alt="Risk Analizi">
+        <div class="hero-content">
+            <h1>Risk Analizi ve Değerlendirmesi</h1>
+            <p>İşyerinizdeki riskleri tespit edin, önlem alın</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-box">
+            <h2>Risk değerlendirmesi nedir?</h2>
+            <p>Risk değerlendirmesi iş yerinde var olan ya da dışarıdan gelebilecek tehlikelerin belirlenmesi ve bu tehlikelerin riske dönüşmesine yol açan faktörler ile tehlikelerden kaynaklanan risklerin analiz edilerek derecelendirilmesi ve kontrol tedbirlerin kararlaştırılması amacıyla yapılması gerekli çalışmalar bütünüdür.<br><br>6331 sayılı iş sağlığı ve güvenliği kanununa göre işverenler risk değerlendirmesi yaptırmakla yükümlüdür. Bu yükümlülüğü yerine getirmeyen işyerlerine 3361 TL idari para cezası, aykırılığın devamı halinde ise her ay başına 5041 TL para cezası kesilir.</p>
+            
+            <h2>Risk Değerlendirmesinin Geçerlilik Süresi</h2>
+            <p>Yapılmış olan risk değerlendirmesi;</p>
+            <ul>
+                <li>Az tehlikeli işlerde en geç 6 yılda bir,</li>
+                <li>Tehlikeli işlerde en geç 4 yılda bir,</li>
+                <li>Çok tehlikeli işlerde en geç 2 yılda bir yenilenmesi gerekmektedir.</li>
+            </ul>
+            <p>Ayrıca işyerinin taşınması, üretim yöntemi değişikliği, iş kazası veya ramak kala olay durumunda risk analizi tamamen veya kısmen değiştirilir.</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container"><p>© 2026 Kalicert İş Sağlığı ve Güvenliği | Tüm hakları saklıdır.</p></div>
+</footer>
+
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    dropdownBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            if (window.innerWidth <= 992) {
+                e.preventDefault();
+                btn.parentElement.classList.toggle('active');
+            }
+        });
+    });
+</script>
+</body>
+</html>

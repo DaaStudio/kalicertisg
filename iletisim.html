@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>İletişim | Kalicert İSG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">KALİCERT<span>İSG</span></div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Hizmetlerimiz ▼</a>
+                    <div class="dropdown-content">
+                        <a href="is-guvenligi-uzmani.html">İŞ GÜVENLİĞİ UZMANI</a>
+                        <a href="risk-analizi.html">RİSK ANALİZİ & DEĞ.</a>
+                        <a href="acil-durum.html">ACİL DURUM EYLEM PLANI</a>
+                        <a href="temel-isg-egitimi.html">TEMEL İSG EĞİTİMİ</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Bilgiler ▼</a>
+                    <div class="dropdown-content">
+                        <a href="tehlike-sinifi.html">TEHLİKE SINIFINIZI ÖĞRENİN</a>
+                        <a href="mevzuat.html">MEVZUAT</a>
+                        <a href="calisma-suresi.html">ÇALIŞMA SÜRESİ HES.</a>
+                    </div>
+                </li>
+                <li><a href="belgelendirme.html">Belgelendirme</a></li>
+                <li><a href="referanslar.html">Referanslarımız</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="page-hero">
+        <img src="images/iletisimic.jpg" alt="İletişim">
+        <div class="hero-content">
+            <h1>İletişim</h1>
+            <p>Sorularınız ve ihtiyaçlarınız için bize ulaşın</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>📌 İletişim Bilgileri</h3>
+                <p>📍 <strong>Adres:</strong> Bağdat caddesi No:198/10 Maltepe/İSTANBUL</p>
+                <p>📧 <strong>E-posta:</strong> info@kalicertisg.com</p>
+                <p>📞 <strong>Telefon:</strong> 0 (216) 489 08 03</p>
+                <p>📠 <strong>Fax:</strong> 02164897308</p>
+                <p>📱 <strong>Gsm1:</strong> 05335930015</p>
+                <p>📱 <strong>Gsm2:</strong> 05339205886</p>
+                
+                <div class="map-container">
+                    <iframe 
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.288921864197!2d29.1310168!3d40.931251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac728e4421915%3A0x5d3863abf531d8b6!2sKalicert%20%C4%B0%C5%9F%20Sa%C4%9Fl%C4%B1%C4%9F%C4%B1%20ve%20G%C3%BCvenli%C4%9Fi!5e0!3m2!1str!2str!4v1712426400000!5m2!1str!2str"                        width="100%" 
+                        height="200" 
+                        style="border:0; border-radius:15px;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>✉️ Hızlı İletişim Formu</h3>
+                
+                <div id="infoMessage" class="alert-info" style="display: none;">
+                    📧 E-posta istemciniz açılacaktır. Mesajınızı kontrol edip "Gönder" butonuna tıklayınız.
+                </div>
+                
+                <form id="contactForm" onsubmit="sendMail(event)">
+                    <div class="form-group">
+                        <label>İşyeri Adı *</label>
+                        <input type="text" id="isyeriAdi" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Adres *</label>
+                        <input type="text" id="adres" required>
+                    </div>
+                    <div class="form-group">
+                        <label>İşyeri Sicil No</label>
+                        <input type="text" id="sicilNo">
+                    </div>
+                    <div class="form-group">
+                        <label>Çalışan Sayısı</label>
+                        <input type="number" id="calisanSayisi">
+                    </div>
+                    <div class="form-group">
+                        <label>E-posta *</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Mesajınız *</label>
+                        <textarea id="mesaj" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Mesaj Gönder</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Kalicert İş Sağlığı ve Güvenliği | Tüm hakları saklıdır.</p>
+        <p>Bağdat caddesi No:198/10 Maltepe/İSTANBUL | Tel: 0 (216) 489 08 03 | info@kalicertisg.com</p>
+    </div>
+</footer>
+
+<script>
+    function sendMail(event) {
+        event.preventDefault();
+        
+        var isyeriAdi = document.getElementById('isyeriAdi').value.trim();
+        var adres = document.getElementById('adres').value.trim();
+        var sicilNo = document.getElementById('sicilNo').value.trim();
+        var calisanSayisi = document.getElementById('calisanSayisi').value.trim();
+        var email = document.getElementById('email').value.trim();
+        var mesaj = document.getElementById('mesaj').value.trim();
+        
+        if(!isyeriAdi || !adres || !email || !mesaj) {
+            alert('Lütfen tüm zorunlu alanları doldurun (*)');
+            return;
+        }
+        
+        if(!email.includes('@') || !email.includes('.')) {
+            alert('Lütfen geçerli bir e-posta adresi girin');
+            return;
+        }
+        
+        var konu = encodeURIComponent('Kalicert İSG İletişim Formu - ' + isyeriAdi);
+        var body = encodeURIComponent(
+            '📋 İLETİŞİM FORMU BİLGİLERİ\n\n' +
+            '🏢 İşyeri Adı: ' + isyeriAdi + '\n' +
+            '📍 Adres: ' + adres + '\n' +
+            '📄 İşyeri Sicil No: ' + (sicilNo || 'Belirtilmemiş') + '\n' +
+            '👥 Çalışan Sayısı: ' + (calisanSayisi || 'Belirtilmemiş') + '\n' +
+            '📧 Gönderen E-posta: ' + email + '\n\n' +
+            '💬 MESAJ:\n' + mesaj + '\n\n' +
+            '---\nBu mesaj Kalicert İSG web sitesinden gönderilmiştir.'
+        );
+        
+        var mailtoLink = 'mailto:info@kalicertisg.com?subject=' + konu + '&body=' + body;
+        
+        var infoMsg = document.getElementById('infoMessage');
+        infoMsg.style.display = 'block';
+        window.location.href = mailtoLink;
+        
+        setTimeout(function() {
+            document.getElementById('contactForm').reset();
+            infoMsg.style.display = 'none';
+        }, 5000);
+    }
+
+    // Mobil Menü
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    dropdownBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            if (window.innerWidth <= 992) {
+                e.preventDefault();
+                btn.parentElement.classList.toggle('active');
+            }
+        });
+    });
+</script>
+</body>
+</html>

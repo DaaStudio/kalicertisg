@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Kalicert İSG | İş Sağlığı ve Güvenliği</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">KALİCERT<span>İSG</span></div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Hizmetlerimiz ▼</a>
+                    <div class="dropdown-content">
+                        <a href="is-guvenligi-uzmani.html">İŞ GÜVENLİĞİ UZMANI</a>
+                        <a href="risk-analizi.html">RİSK ANALİZİ & DEĞ.</a>
+                        <a href="acil-durum.html">ACİL DURUM EYLEM PLANI</a>
+                        <a href="temel-isg-egitimi.html">TEMEL İSG EĞİTİMİ</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropdown-btn">Bilgiler ▼</a>
+                    <div class="dropdown-content">
+                        <a href="tehlike-sinifi.html">TEHLİKE SINIFINIZI ÖĞRENİN</a>
+                        <a href="mevzuat.html">MEVZUAT</a>
+                        <a href="calisma-suresi.html">ÇALIŞMA SÜRESİ HES.</a>
+                    </div>
+                </li>
+                <li><a href="belgelendirme.html">Belgelendirme</a></li>
+                <li><a href="referanslar.html">Referanslarımız</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <!-- SLIDER -->
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <div class="slide">
+                    <img src="images/anasayfa_lider.jpg" alt="İş Sağlığı ve Güvenliği">
+                    <div class="slide-content">
+                        <h2>İş Sağlığı ve Güvenliğinde Lider Çözüm</h2>
+                        <p>Profesyonel kadro ile işyerinizi güvence altına alın</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/anasayfa_analiz.jpg" alt="Risk Analizi">
+                    <div class="slide-content">
+                        <h2>Risk Analizi ve Değerlendirmesi</h2>
+                        <p>Tehlikeleri önceden tespit edin, riskleri yönetin</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/anasayfa_sertifika.jpg" alt="Temel İSG Eğitimi">
+                    <div class="slide-content">
+                        <h2>Sertifikalı Temel İSG Eğitimi</h2>
+                        <p>Çalışanlarınızı bilinçlendirin, kazaları önleyin</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="images/anasayfa_acil.jpg" alt="Acil Durum Planı">
+                    <div class="slide-content">
+                        <h2>Acil Durum Eylem Planı</h2>
+                        <p>Her türlü acil duruma hazırlıklı olun</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4 Büyük Kart -->
+        <div class="hero-cards">
+            <div class="card" onclick="location.href='hizmetlerimiz.html'">
+                <div class="card-img"><img src="images/kart-hizmetler.png" alt="Kalicert İSG"></div>
+                <h3>KALİCERT İSG</h3>
+                <p>İş Sağlığı ve Güvenliği profesyonel çözümler.</p>
+            </div>
+            <div class="card" onclick="location.href='risk-analizi.html'">
+                <div class="card-img"><img src="images/risk.png" alt="Risk Analizi"></div>
+                <h3>RİSK ANALİZİ</h3>
+                <p>Risk değerlendirmesi ve analiz hizmetleri.</p>
+            </div>
+            <div class="card" onclick="location.href='temel-isg-egitimi.html'">
+                <div class="card-img"><img src="images/egitim2.png" alt="Temel İSG Eğitimi"></div>
+                <h3>TEMEL İSG EĞİTİMİ</h3>
+                <p>Sertifikalı iş sağlığı ve güvenliği eğitimi.</p>
+            </div>
+            <div class="card" onclick="location.href='acil-durum.html'">
+                <div class="card-img"><img src="images/acil2.png" alt="Acil Durum Planı"></div>
+                <h3>ACİL DURUM PLANI</h3>
+                <p>Acil durum eylem planı hazırlığı.</p>
+            </div>
+        </div>
+
+        <!-- Alt Bilgi Blokları -->
+        <div class="info-blocks">
+            <div class="block"><h3>Biz Kimiz?</h3><p>A, B ve C sınıfı uzman kadromuzla iş güvenliği, risk analizi, acil durum planı ve eğitimlerde yanınızdayız.</p><a href="hakkimizda.html" class="btn">Detaylı Bilgi</a></div>
+            <div class="block"><h3>Hizmetlerimiz</h3><p>İş Güvenliği Uzmanlığı, Risk Analizi, Acil Durum Planı ve Temel İSG Eğitimi gibi hizmetlerimizle sektörde lideriz.</p><a href="hizmetlerimiz.html" class="btn">Hizmetleri İncele</a></div>
+            <div class="block"><h3>Tehlike Sınıfınızı Öğrenin</h3><p>İşyerinizin tehlike sınıfını öğrenmek için hemen tıklayın.</p><br><a href="tehlike-sinifi.html" class="btn">Öğrenmek İçin Tıkla</a></div>
+            <div class="block"><h3>Eğitimler</h3><p>Sertifikalı Temel İSG Eğitimi ve diğer eğitim konularımız hakkında bilgi alın.</p><a href="temel-isg-egitimi.html" class="btn">Eğitimlere Git</a></div>
+            <div class="block"><h3>Mevzuat</h3><p>Güncel İSG mevzuatına ulaşmak için tıklayın.</p><br><a href="mevzuat.html" class="btn">Mevzuatı Görüntüle</a></div>
+            <div class="block"><h3>Bize Ulaşın</h3><p>Telefon, e-posta veya adresimizden bize ulaşabilirsiniz.</p><br><a href="iletisim.html" class="btn">İletişim Sayfası</a></div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Kalicert İş Sağlığı ve Güvenliği | Tüm hakları saklıdır.</p>
+        <p>Bağdat caddesi No:198/10 Maltepe/İSTANBUL | Tel: 0 (216) 489 08 03 | info@kalicertisg.com</p>
+    </div>
+</footer>
+
+<script>
+    // Mobil Menü
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    dropdownBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            if (window.innerWidth <= 992) {
+                e.preventDefault();
+                const parent = btn.parentElement;
+                parent.classList.toggle('active');
+            }
+        });
+    });
+
+    // Slider
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    const slider = document.getElementById('slider');
+
+    function showSlide() {
+        slideIndex++;
+        if (slideIndex >= totalSlides) slideIndex = 0;
+        slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+    }
+    setInterval(showSlide, 4000);
+</script>
+</body>
+</html>
