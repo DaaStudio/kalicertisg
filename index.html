@@ -4,39 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Kalicert İSG | İş Sağlığı ve Güvenliği</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="top-bar">
+    <div class="container">
+        <div class="contact-info">
+            <span><i class="fa-solid fa-phone"></i> 0 (216) 489 08 03</span>
+            <span><i class="fa-solid fa-envelope"></i> info@kalicertisg.com</span>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </div>
+</div>
+
 <header>
     <div class="container">
         <nav>
-            <div class="logo">KALİCERT<span>İSG</span></div>
-            <button class="menu-toggle" id="menuToggle">
+            <a href="index.html" class="logo">KALİCERT<span>İSG</span></a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menüyü Aç/Kapat">
                 <span></span><span></span><span></span>
             </button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="index.html" class="active">Anasayfa</a></li>
                 <li><a href="hakkimizda.html">Hakkımızda</a></li>
                 <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdown-btn">Hizmetlerimiz ▼</a>
+                    <a href="hizmetlerimiz.html" class="dropdown-btn">Hizmetlerimiz <i class="fa-solid fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="is-guvenligi-uzmani.html">İŞ GÜVENLİĞİ UZMANI</a>
-                        <a href="risk-analizi.html">RİSK ANALİZİ & DEĞ.</a>
-                        <a href="acil-durum.html">ACİL DURUM EYLEM PLANI</a>
-                        <a href="temel-isg-egitimi.html">TEMEL İSG EĞİTİMİ</a>
+                        <a href="hizmetlerimiz.html">Tüm Hizmetlerimiz</a>
+                        <a href="is-guvenligi-uzmani.html">İş Güvenliği Uzmanı</a>
+                        <a href="risk-analizi.html">Risk Analizi & Değ.</a>
+                        <a href="acil-durum.html">Acil Durum Eylem Planı</a>
+                        <a href="temel-isg-egitimi.html">Temel İSG Eğitimi</a>
                     </div>
                 </li>
                 <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdown-btn">Bilgiler ▼</a>
+                    <a href="javascript:void(0)" class="dropdown-btn">Bilgiler <i class="fa-solid fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="tehlike-sinifi.html">TEHLİKE SINIFINIZI ÖĞRENİN</a>
-                        <a href="mevzuat.html">MEVZUAT</a>
-                        <a href="calisma-suresi.html">ÇALIŞMA SÜRESİ HES.</a>
+                        <a href="tehlike-sinifi.html">Tehlike Sınıfınızı Öğrenin</a>
+                        <a href="mevzuat.html">Mevzuat</a>
+                        <a href="calisma-suresi.html">Çalışma Süresi Hes.</a>
                     </div>
                 </li>
                 <li><a href="belgelendirme.html">Belgelendirme</a></li>
-                <li><a href="referanslar.html">Referanslarımız</a></li>
                 <li><a href="iletisim.html">İletişim</a></li>
             </ul>
         </nav>
@@ -45,115 +60,208 @@
 
 <main>
     <div class="container">
-        <!-- SLIDER -->
-        <div class="slider-container">
-            <div class="slider" id="slider">
-                <div class="slide">
-                    <img src="images/anasayfa_lider.jpg" alt="İş Sağlığı ve Güvenliği">
-                    <div class="slide-content">
-                        <h2>İş Sağlığı ve Güvenliğinde Lider Çözüm</h2>
-                        <p>Profesyonel kadro ile işyerinizi güvence altına alın</p>
+        <!-- SİDEBAR YOK, TAM KAPSAMLI SLIDER -->
+        <div class="slider-wrapper">
+            <div class="slider-container" id="sliderContainer">
+                <div class="slider" id="slider">
+                    <div class="slide">
+                        <img src="images/anasayfa_lider.jpg" alt="İş Sağlığı ve Güvenliği" loading="lazy">
+                        <div class="slide-content">
+                            <h2>İş Sağlığı ve Güvenliğinde Lider Çözüm</h2>
+                            <p>Profesyonel kadro ile işyerinizi güvence altına alın</p>
+                        </div>
                     </div>
-                </div>
-                <div class="slide">
-                    <img src="images/anasayfa_analiz.jpg" alt="Risk Analizi">
-                    <div class="slide-content">
-                        <h2>Risk Analizi ve Değerlendirmesi</h2>
-                        <p>Tehlikeleri önceden tespit edin, riskleri yönetin</p>
+                    <div class="slide">
+                        <img src="images/anasayfa_analiz.jpg" alt="Risk Analizi" loading="lazy">
+                        <div class="slide-content">
+                            <h2>Risk Analizi ve Değerlendirmesi</h2>
+                            <p>Tehlikeleri önceden tespit edin, riskleri yönetin</p>
+                        </div>
                     </div>
-                </div>
-                <div class="slide">
-                    <img src="images/anasayfa_sertifika.jpg" alt="Temel İSG Eğitimi">
-                    <div class="slide-content">
-                        <h2>Sertifikalı Temel İSG Eğitimi</h2>
-                        <p>Çalışanlarınızı bilinçlendirin, kazaları önleyin</p>
+                    <div class="slide">
+                        <img src="images/anasayfa_sertifika.jpg" alt="Temel İSG Eğitimi" loading="lazy">
+                        <div class="slide-content">
+                            <h2>Sertifikalı Temel İSG Eğitimi</h2>
+                            <p>Çalışanlarınızı bilinçlendirin, kazaları önleyin</p>
+                        </div>
                     </div>
-                </div>
-                <div class="slide">
-                    <img src="images/anasayfa_acil.jpg" alt="Acil Durum Planı">
-                    <div class="slide-content">
-                        <h2>Acil Durum Eylem Planı</h2>
-                        <p>Her türlü acil duruma hazırlıklı olun</p>
+                    <div class="slide">
+                        <img src="images/anasayfa_acil.jpg" alt="Acil Durum Planı" loading="lazy">
+                        <div class="slide-content">
+                            <h2>Acil Durum Eylem Planı</h2>
+                            <p>Her türlü acil duruma hazırlıklı olun</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- Slider navigasyon noktaları -->
+            <div class="slider-dots" id="sliderDots"></div>
         </div>
 
-        <!-- 4 Büyük Kart -->
+        <!-- HERO CARDS -->
         <div class="hero-cards">
             <div class="card" onclick="location.href='hizmetlerimiz.html'">
-                <div class="card-img"><img src="images/kart-hizmetler.png" alt="Kalicert İSG"></div>
+                <div class="card-img"><img src="images/kart-hizmetler.png" alt="Kalicert İSG" loading="lazy"></div>
                 <h3>KALİCERT İSG</h3>
                 <p>İş Sağlığı ve Güvenliği profesyonel çözümler.</p>
             </div>
             <div class="card" onclick="location.href='risk-analizi.html'">
-                <div class="card-img"><img src="images/risk.png" alt="Risk Analizi"></div>
+                <div class="card-img"><img src="images/risk.png" alt="Risk Analizi" loading="lazy"></div>
                 <h3>RİSK ANALİZİ</h3>
                 <p>Risk değerlendirmesi ve analiz hizmetleri.</p>
             </div>
             <div class="card" onclick="location.href='temel-isg-egitimi.html'">
-                <div class="card-img"><img src="images/egitim2.png" alt="Temel İSG Eğitimi"></div>
+                <div class="card-img"><img src="images/egitim2.png" alt="Temel İSG Eğitimi" loading="lazy"></div>
                 <h3>TEMEL İSG EĞİTİMİ</h3>
                 <p>Sertifikalı iş sağlığı ve güvenliği eğitimi.</p>
             </div>
             <div class="card" onclick="location.href='acil-durum.html'">
-                <div class="card-img"><img src="images/acil2.png" alt="Acil Durum Planı"></div>
+                <div class="card-img"><img src="images/acil2.png" alt="Acil Durum Planı" loading="lazy"></div>
                 <h3>ACİL DURUM PLANI</h3>
                 <p>Acil durum eylem planı hazırlığı.</p>
             </div>
         </div>
 
-        <!-- Alt Bilgi Blokları -->
+        <!-- INFO BLOCKS -->
         <div class="info-blocks">
             <div class="block"><h3>Biz Kimiz?</h3><p>A, B ve C sınıfı uzman kadromuzla iş güvenliği, risk analizi, acil durum planı ve eğitimlerde yanınızdayız.</p><a href="hakkimizda.html" class="btn">Detaylı Bilgi</a></div>
             <div class="block"><h3>Hizmetlerimiz</h3><p>İş Güvenliği Uzmanlığı, Risk Analizi, Acil Durum Planı ve Temel İSG Eğitimi gibi hizmetlerimizle sektörde lideriz.</p><a href="hizmetlerimiz.html" class="btn">Hizmetleri İncele</a></div>
-            <div class="block"><h3>Tehlike Sınıfınızı Öğrenin</h3><p>İşyerinizin tehlike sınıfını öğrenmek için hemen tıklayın.</p><br><a href="tehlike-sinifi.html" class="btn">Öğrenmek İçin Tıkla</a></div>
+            <div class="block"><h3>Tehlike Sınıfınızı Öğrenin</h3><p>İşyerinizin tehlike sınıfını öğrenmek için hemen tıklayın.</p><a href="tehlike-sinifi.html" class="btn">Öğrenmek İçin Tıkla</a></div>
             <div class="block"><h3>Eğitimler</h3><p>Sertifikalı Temel İSG Eğitimi ve diğer eğitim konularımız hakkında bilgi alın.</p><a href="temel-isg-egitimi.html" class="btn">Eğitimlere Git</a></div>
-            <div class="block"><h3>Mevzuat</h3><p>Güncel İSG mevzuatına ulaşmak için tıklayın.</p><br><a href="mevzuat.html" class="btn">Mevzuatı Görüntüle</a></div>
-            <div class="block"><h3>Bize Ulaşın</h3><p>Telefon, e-posta veya adresimizden bize ulaşabilirsiniz.</p><br><a href="iletisim.html" class="btn">İletişim Sayfası</a></div>
+            <div class="block"><h3>Mevzuat</h3><p>Güncel İSG mevzuatına ulaşmak için tıklayın.</p><a href="mevzuat.html" class="btn">Mevzuatı Görüntüle</a></div>
+            <div class="block"><h3>Bize Ulaşın</h3><p>Telefon, e-posta veya adresimizden bize kolayca ulaşabilirsiniz.</p><a href="iletisim.html" class="btn">İletişim Sayfası</a></div>
         </div>
     </div>
 </main>
 
-<footer>
-    <div class="container">
-        <p>© 2026 Kalicert İş Sağlığı ve Güvenliği | Tüm hakları saklıdır.</p>
-        <p>Bağdat caddesi No:198/10 Maltepe/İSTANBUL | Tel: 0 (216) 489 08 03 | info@kalicertisg.com</p>
+<a href="https://wa.me/905335930015" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col"><h4>KALİCERT<span>İSG</span></h4><p>20 yılı aşkın tecrübemizle iş sağlığı ve güvenliğinde güvenilir çözüm ortağınız.</p><div class="social-icons"><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a><a href="https://wa.me/905335930015" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></div></div>
+        <div class="footer-col"><h4>Hızlı Linkler</h4><ul><li><a href="hakkimizda.html">Hakkımızda</a></li><li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li><li><a href="belgelendirme.html">Belgelendirme</a></li><li><a href="iletisim.html">İletişim</a></li></ul></div>
+        <div class="footer-col"><h4>Hizmetlerimiz</h4><ul><li><a href="is-guvenligi-uzmani.html">İş Güvenliği Uzmanı</a></li><li><a href="risk-analizi.html">Risk Analizi & Değerlendirme</a></li><li><a href="acil-durum.html">Acil Durum Eylem Planı</a></li><li><a href="temel-isg-egitimi.html">Temel İSG Eğitimi</a></li></ul></div>
+        <div class="footer-col"><h4>İletişim</h4><p><i class="fa-solid fa-location-dot"></i> Bağdat caddesi No:198/10 Maltepe/İSTANBUL</p><p><i class="fa-solid fa-phone"></i> 0 (216) 489 08 03</p><p><i class="fa-solid fa-mobile-screen"></i> 0533 593 00 15</p><p><i class="fa-solid fa-envelope"></i> info@kalicertisg.com</p></div>
     </div>
+    <div class="footer-bottom"><div class="container"><p>© 2026 Kalicert İş Sağlığı ve Güvenliği | Tüm hakları saklıdır.</p></div></div>
 </footer>
 
 <script>
-    // Mobil Menü
-    const menuToggle = document.getElementById('menuToggle');
-    const navLinks = document.getElementById('navLinks');
-    const dropdownBtns = document.querySelectorAll('.dropdown-btn');
+    (function() {
+        // Mobil Menü
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        const dropdownBtns = document.querySelectorAll('.dropdown-btn');
 
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
+        if (menuToggle && navLinks) {
+            menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+        }
 
-    dropdownBtns.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            if (window.innerWidth <= 992) {
-                e.preventDefault();
-                const parent = btn.parentElement;
-                parent.classList.toggle('active');
-            }
+        dropdownBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                if (window.innerWidth <= 992) {
+                    if (btn.getAttribute('href') === 'javascript:void(0)') {
+                        e.preventDefault();
+                    } else if (!btn.parentElement.classList.contains('active')) {
+                        e.preventDefault();
+                    }
+                    btn.parentElement.classList.toggle('active');
+                }
+            });
         });
-    });
 
-    // Slider
-    let slideIndex = 0;
-    const slides = document.querySelectorAll('.slide');
-    const totalSlides = slides.length;
-    const slider = document.getElementById('slider');
+        // Gelişmiş Slider (Responsive, otomatik geçiş, nokta kontrolleri)
+        const slider = document.getElementById('slider');
+        const slides = document.querySelectorAll('.slide');
+        const dotsContainer = document.getElementById('sliderDots');
+        let currentIndex = 0;
+        let slideInterval;
+        const totalSlides = slides.length;
 
-    function showSlide() {
-        slideIndex++;
-        if (slideIndex >= totalSlides) slideIndex = 0;
-        slider.style.transform = `translateX(-${slideIndex * 100}%)`;
-    }
-    setInterval(showSlide, 4000);
+        if (slider && totalSlides > 0) {
+            // Nokta oluştur
+            function createDots() {
+                if (!dotsContainer) return;
+                dotsContainer.innerHTML = '';
+                for (let i = 0; i < totalSlides; i++) {
+                    const dot = document.createElement('button');
+                    dot.classList.add('slider-dot');
+                    if (i === currentIndex) dot.classList.add('active');
+                    dot.setAttribute('data-index', i);
+                    dot.addEventListener('click', () => goToSlide(i));
+                    dotsContainer.appendChild(dot);
+                }
+            }
+
+            function updateDots() {
+                const dots = document.querySelectorAll('.slider-dot');
+                dots.forEach((dot, idx) => {
+                    if (idx === currentIndex) dot.classList.add('active');
+                    else dot.classList.remove('active');
+                });
+            }
+
+            function goToSlide(index) {
+                if (index < 0) index = 0;
+                if (index >= totalSlides) index = 0;
+                currentIndex = index;
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+                updateDots();
+                resetInterval();
+            }
+
+            function nextSlide() {
+                let newIndex = currentIndex + 1;
+                if (newIndex >= totalSlides) newIndex = 0;
+                goToSlide(newIndex);
+            }
+
+            function resetInterval() {
+                if (slideInterval) clearInterval(slideInterval);
+                slideInterval = setInterval(nextSlide, 4500);
+            }
+
+            createDots();
+            resetInterval();
+
+            // Dokunmatik / mouse ile sürükleme desteği (opsiyonel)
+            let startX = 0;
+            let isDragging = false;
+            const sliderContainer = document.querySelector('.slider-container');
+            if (sliderContainer) {
+                sliderContainer.addEventListener('touchstart', (e) => {
+                    startX = e.touches[0].clientX;
+                    isDragging = true;
+                });
+                sliderContainer.addEventListener('touchend', (e) => {
+                    if (!isDragging) return;
+                    const endX = e.changedTouches[0].clientX;
+                    const diff = startX - endX;
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) nextSlide();
+                        else goToSlide(currentIndex - 1);
+                    }
+                    isDragging = false;
+                });
+                sliderContainer.addEventListener('mousedown', (e) => {
+                    startX = e.clientX;
+                    isDragging = true;
+                    e.preventDefault();
+                });
+                window.addEventListener('mouseup', (e) => {
+                    if (!isDragging) return;
+                    const diff = startX - e.clientX;
+                    if (Math.abs(diff) > 50) {
+                        if (diff > 0) nextSlide();
+                        else goToSlide(currentIndex - 1);
+                    }
+                    isDragging = false;
+                });
+            }
+        }
+    })();
 </script>
 </body>
 </html>

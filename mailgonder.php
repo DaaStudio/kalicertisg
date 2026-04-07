@@ -27,24 +27,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // E-posta konusu
     $subject = "Kalicert İSG İletişim Formu - " . $isyeri_adi;
     
-    // E-posta içeriği
+    // E-posta içeriği (Profesyonel HTML Tablosu)
     $message = "
     <html>
     <head>
         <title>Kalicert İSG İletişim Formu</title>
     </head>
-    <body>
-        <h2>Kalicert İSG Web Sitesinden Yeni Mesaj</h2>
-        <table border='0' cellpadding='5'>
-            <tr><td><strong>İşyeri Adı:</strong></td><td>$isyeri_adi</td></tr>
-            <tr><td><strong>Adres:</strong></td><td>$adres</td></tr>
-            <tr><td><strong>İşyeri Sicil No:</strong></td><td>" . ($sicil_no ?: 'Belirtilmemiş') . "</td></tr>
-            <tr><td><strong>Çalışan Sayısı:</strong></td><td>" . ($calisan_sayisi ?: 'Belirtilmemiş') . "</td></tr>
-            <tr><td><strong>Gönderen E-posta:</strong></td><td>$email</td></tr>
-            <tr><td><strong>Mesaj:</strong></td><td>$mesaj</td></tr>
+    <body style='font-family: Arial, sans-serif; color:#333;'>
+        <h2 style='color:#003366;'>Kalicert İSG Web Sitesinden Yeni Mesaj</h2>
+        <table border='1' cellpadding='10' cellspacing='0' style='border-collapse: collapse; width:100%; max-width:600px;'>
+            <tr><td style='background:#f4f4f4; width:150px;'><strong>İşyeri Adı:</strong></td><td>$isyeri_adi</td></tr>
+            <tr><td style='background:#f4f4f4;'><strong>Adres:</strong></td><td>$adres</td></tr>
+            <tr><td style='background:#f4f4f4;'><strong>İşyeri Sicil No:</strong></td><td>" . ($sicil_no ?: 'Belirtilmemiş') . "</td></tr>
+            <tr><td style='background:#f4f4f4;'><strong>Çalışan Sayısı:</strong></td><td>" . ($calisan_sayisi ?: 'Belirtilmemiş') . "</td></tr>
+            <tr><td style='background:#f4f4f4;'><strong>Gönderen E-posta:</strong></td><td>$email</td></tr>
+            <tr><td style='background:#f4f4f4;'><strong>Mesaj:</strong></td><td>$mesaj</td></tr>
         </table>
-        <hr>
-        <small>Bu mesaj Kalicert İSG web sitesi iletişim formundan gönderilmiştir.</small>
+        <br>
+        <small style='color:#666;'>Bu mesaj Kalicert İSG web sitesi iletişim formundan gönderilmiştir.</small>
     </body>
     </html>
     ";
@@ -64,7 +64,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     exit;
 } else {
-    // Form dışı erişim
     header("Location: iletisim.html");
     exit;
 }

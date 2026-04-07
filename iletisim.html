@@ -2,42 +2,34 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İletişim | Kalicert İSG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="top-bar">
+    <div class="container"><div class="contact-info"><span><i class="fa-solid fa-phone"></i> 0 (216) 489 08 03</span><span><i class="fa-solid fa-envelope"></i> info@kalicertisg.com</span></div><div class="social-icons"><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook"></i></a></div></div>
+</div>
+
 <header>
     <div class="container">
-        <nav>
-            <div class="logo">KALİCERT<span>İSG</span></div>
-            <button class="menu-toggle" id="menuToggle">
-                <span></span><span></span><span></span>
-            </button>
+        <nav style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <a href="index.html" class="logo">KALİCERT<span>İSG</span></a>
+            <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Anasayfa</a></li>
-                <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdown-btn">Hizmetlerimiz ▼</a>
+                <li><a href="index.html">Anasayfa</a></li><li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li class="dropdown"><a href="hizmetlerimiz.html" class="dropdown-btn">Hizmetlerimiz <i class="fa-solid fa-chevron-down" style="font-size:12px;"></i></a>
                     <div class="dropdown-content">
-                        <a href="is-guvenligi-uzmani.html">İŞ GÜVENLİĞİ UZMANI</a>
-                        <a href="risk-analizi.html">RİSK ANALİZİ & DEĞ.</a>
-                        <a href="acil-durum.html">ACİL DURUM EYLEM PLANI</a>
-                        <a href="temel-isg-egitimi.html">TEMEL İSG EĞİTİMİ</a>
+                        <a href="hizmetlerimiz.html" style="font-weight:700; color:var(--primary-color); border-bottom: 2px solid var(--secondary-color);">Tüm Hizmetlerimiz</a>
+                        <a href="is-guvenligi-uzmani.html">İş Güvenliği Uzmanı</a><a href="risk-analizi.html">Risk Analizi & Değ.</a><a href="acil-durum.html">Acil Durum Eylem Planı</a><a href="temel-isg-egitimi.html">Temel İSG Eğitimi</a>
                     </div>
                 </li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdown-btn">Bilgiler ▼</a>
-                    <div class="dropdown-content">
-                        <a href="tehlike-sinifi.html">TEHLİKE SINIFINIZI ÖĞRENİN</a>
-                        <a href="mevzuat.html">MEVZUAT</a>
-                        <a href="calisma-suresi.html">ÇALIŞMA SÜRESİ HES.</a>
-                    </div>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropdown-btn">Bilgiler <i class="fa-solid fa-chevron-down" style="font-size:12px;"></i></a>
+                    <div class="dropdown-content"><a href="tehlike-sinifi.html">Tehlike Sınıfınızı Öğrenin</a><a href="mevzuat.html">Mevzuat</a><a href="calisma-suresi.html">Çalışma Süresi Hes.</a></div>
                 </li>
-                <li><a href="belgelendirme.html">Belgelendirme</a></li>
-                <li><a href="referanslar.html">Referanslarımız</a></li>
-                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="belgelendirme.html">Belgelendirme</a></li><li><a href="iletisim.html" class="active">İletişim</a></li>
             </ul>
         </nav>
     </div>
@@ -45,7 +37,7 @@
 
 <main>
     <div class="page-hero">
-        <img src="images/iletisimic.jpg" alt="İletişim">
+        <img src="images/iletisimic.jpg" alt="İletişim" onerror="this.src='https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=2071&auto=format&fit=crop'">
         <div class="hero-content">
             <h1>İletişim</h1>
             <p>Sorularınız ve ihtiyaçlarınız için bize ulaşın</p>
@@ -54,134 +46,99 @@
 
     <div class="container">
         <div class="contact-wrapper">
-            <div class="contact-info">
-                <h3>📌 İletişim Bilgileri</h3>
-                <p>📍 <strong>Adres:</strong> Bağdat caddesi No:198/10 Maltepe/İSTANBUL</p>
-                <p>📧 <strong>E-posta:</strong> info@kalicertisg.com</p>
-                <p>📞 <strong>Telefon:</strong> 0 (216) 489 08 03</p>
-                <p>📠 <strong>Fax:</strong> 02164897308</p>
-                <p>📱 <strong>Gsm1:</strong> 05335930015</p>
-                <p>📱 <strong>Gsm2:</strong> 05339205886</p>
+            <div class="contact-info-card">
+                <h3>İletişim Bilgilerimiz</h3>
+                <p><i class="fa-solid fa-location-dot"></i> <strong>Adres:</strong> Bağdat caddesi No:198/10 Maltepe/İSTANBUL</p>
+                <p><i class="fa-solid fa-envelope"></i> <strong>E-posta:</strong> info@kalicertisg.com</p>
+                <p><i class="fa-solid fa-phone"></i> <strong>Telefon:</strong> 0 (216) 489 08 03</p>
+                <p><i class="fa-solid fa-fax"></i> <strong>Fax:</strong> 0 (216) 489 73 08</p>
+                <p><i class="fa-solid fa-mobile-screen"></i> <strong>Gsm1:</strong> 0533 593 00 15</p>
+                <p><i class="fa-solid fa-mobile-screen"></i> <strong>Gsm2:</strong> 0533 920 58 86</p>
                 
-                <div class="map-container">
+                <div style="margin-top:20px; padding-top:20px; border-top:1px solid #eee;">
+                    <h4>Bizi Takip Edin</h4>
+                    <div style="margin-top:10px;">
+                        <a href="#" style="color:var(--primary-color); font-size:24px; margin-right:15px;"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" style="color:var(--primary-color); font-size:24px; margin-right:15px;"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" style="color:var(--primary-color); font-size:24px; margin-right:15px;"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://wa.me/905335930015" style="color:#25d366; font-size:24px;"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="map-container" style="margin-top:20px;">
                     <iframe 
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.288921864197!2d29.1310168!3d40.931251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac728e4421915%3A0x5d3863abf531d8b6!2sKalicert%20%C4%B0%C5%9F%20Sa%C4%9Fl%C4%B1%C4%9F%C4%B1%20ve%20G%C3%BCvenli%C4%9Fi!5e0!3m2!1str!2str!4v1712426400000!5m2!1str!2str"                        width="100%" 
-                        height="200" 
-                        style="border:0; border-radius:15px;" 
-                        allowfullscreen="" 
-                        loading="lazy">
+						src="https://maps.google.com/maps?q=Ba%C4%9Fdat%20caddesi%20No:198/10%20Maltepe/%C4%B0STANBUL&t=&z=15&ie=UTF8&iwloc=&output=embed"                        
+                        width="100%" height="250" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
             </div>
             
             <div class="contact-form">
-                <h3>✉️ Hızlı İletişim Formu</h3>
-                
+                <h3>Bize Mesaj Gönderin</h3>
                 <div id="infoMessage" class="alert-info" style="display: none;">
-                    📧 E-posta istemciniz açılacaktır. Mesajınızı kontrol edip "Gönder" butonuna tıklayınız.
+                    <i class="fa-solid fa-circle-info"></i> E-posta istemciniz açılacaktır. Mesajınızı kontrol edip "Gönder" butonuna tıklayınız.
                 </div>
-                
-                <form id="contactForm" onsubmit="sendMail(event)">
+                <form id="contactForm" action="mailgonder.php" method="POST">
                     <div class="form-group">
                         <label>İşyeri Adı *</label>
-                        <input type="text" id="isyeriAdi" required>
+                        <input type="text" name="isyeri_adi" id="isyeri_adi" required placeholder="Firma Adınızı Giriniz">
                     </div>
                     <div class="form-group">
                         <label>Adres *</label>
-                        <input type="text" id="adres" required>
+                        <input type="text" name="adres" id="adres" required placeholder="Açık Adresiniz">
+                    </div>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap:15px;">
+                        <div class="form-group">
+                            <label>İşyeri Sicil No</label>
+                            <input type="text" name="sicil_no" id="sicil_no" placeholder="İsteğe Bağlı">
+                        </div>
+                        <div class="form-group">
+                            <label>Çalışan Sayısı</label>
+                            <input type="number" name="calisan_sayisi" id="calisan_sayisi" placeholder="Örn: 50">
+                        </div>
                     </div>
                     <div class="form-group">
-                        <label>İşyeri Sicil No</label>
-                        <input type="text" id="sicilNo">
-                    </div>
-                    <div class="form-group">
-                        <label>Çalışan Sayısı</label>
-                        <input type="number" id="calisanSayisi">
-                    </div>
-                    <div class="form-group">
-                        <label>E-posta *</label>
-                        <input type="email" id="email" required>
+                        <label>E-posta Adresiniz *</label>
+                        <input type="email" name="email" id="email" required placeholder="ornek@firma.com">
                     </div>
                     <div class="form-group">
                         <label>Mesajınız *</label>
-                        <textarea id="mesaj" rows="4" required></textarea>
+                        <textarea name="mesaj" id="mesaj" rows="5" required placeholder="Bize iletmek istedikleriniz..."></textarea>
                     </div>
-                    <button type="submit" class="submit-btn">Mesaj Gönder</button>
+                    <button type="submit" class="submit-btn"><i class="fa-solid fa-paper-plane"></i> Mesajı Gönder</button>
                 </form>
             </div>
         </div>
     </div>
 </main>
 
-<footer>
-    <div class="container">
-        <p>© 2026 Kalicert İş Sağlığı ve Güvenliği | Tüm hakları saklıdır.</p>
-        <p>Bağdat caddesi No:198/10 Maltepe/İSTANBUL | Tel: 0 (216) 489 08 03 | info@kalicertisg.com</p>
+<a href="https://wa.me/905335930015" class="whatsapp-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col"><h4>KALİCERT<span>İSG</span></h4><p>Profesyonel OHS danışmanlık hizmetleri.</p><div class="social-icons"><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook"></i></a></div></div>
+        <div class="footer-col"><h4>Hızlı Linkler</h4><ul><li><a href="hakkimizda.html">Hakkımızda</a></li><li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li><li><a href="iletisim.html">İletişim</a></li></ul></div>
+        <div class="footer-col"><h4>Hizmetlerimiz</h4><ul><li><a href="is-guvenligi-uzmani.html">İş Güvenliği Uzmanı</a></li><li><a href="risk-analizi.html">Risk Analizi</a></li><li><a href="acil-durum.html">Acil Durum Planı</a></li><li><a href="temel-isg-egitimi.html">İSG Eğitimi</a></li></ul></div>
+        <div class="footer-col"><h4>İletişim</h4><p><i class="fa-solid fa-location-dot"></i> Bağdat caddesi No:198/10 Maltepe/İSTANBUL</p><p><i class="fa-solid fa-phone"></i> 0 (216) 489 08 03</p></div>
     </div>
+    <div class="footer-bottom"><div class="container"><p>© 2026 Kalicert İş Sağlığı ve Güvenliği | Tüm hakları saklıdır.</p></div></div>
 </footer>
 
 <script>
-    function sendMail(event) {
-        event.preventDefault();
-        
-        var isyeriAdi = document.getElementById('isyeriAdi').value.trim();
-        var adres = document.getElementById('adres').value.trim();
-        var sicilNo = document.getElementById('sicilNo').value.trim();
-        var calisanSayisi = document.getElementById('calisanSayisi').value.trim();
-        var email = document.getElementById('email').value.trim();
-        var mesaj = document.getElementById('mesaj').value.trim();
-        
-        if(!isyeriAdi || !adres || !email || !mesaj) {
-            alert('Lütfen tüm zorunlu alanları doldurun (*)');
-            return;
-        }
-        
-        if(!email.includes('@') || !email.includes('.')) {
-            alert('Lütfen geçerli bir e-posta adresi girin');
-            return;
-        }
-        
-        var konu = encodeURIComponent('Kalicert İSG İletişim Formu - ' + isyeriAdi);
-        var body = encodeURIComponent(
-            '📋 İLETİŞİM FORMU BİLGİLERİ\n\n' +
-            '🏢 İşyeri Adı: ' + isyeriAdi + '\n' +
-            '📍 Adres: ' + adres + '\n' +
-            '📄 İşyeri Sicil No: ' + (sicilNo || 'Belirtilmemiş') + '\n' +
-            '👥 Çalışan Sayısı: ' + (calisanSayisi || 'Belirtilmemiş') + '\n' +
-            '📧 Gönderen E-posta: ' + email + '\n\n' +
-            '💬 MESAJ:\n' + mesaj + '\n\n' +
-            '---\nBu mesaj Kalicert İSG web sitesinden gönderilmiştir.'
-        );
-        
-        var mailtoLink = 'mailto:info@kalicertisg.com?subject=' + konu + '&body=' + body;
-        
-        var infoMsg = document.getElementById('infoMessage');
-        infoMsg.style.display = 'block';
-        window.location.href = mailtoLink;
-        
-        setTimeout(function() {
-            document.getElementById('contactForm').reset();
-            infoMsg.style.display = 'none';
-        }, 5000);
-    }
-
-    // Mobil Menü
     const menuToggle = document.getElementById('menuToggle');
     const navLinks = document.getElementById('navLinks');
     const dropdownBtns = document.querySelectorAll('.dropdown-btn');
-
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-
-    dropdownBtns.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            if (window.innerWidth <= 992) {
+    menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+    dropdownBtns.forEach(btn => btn.addEventListener('click', (e) => {
+        if (window.innerWidth <= 992) { 
+            if(btn.getAttribute('href') === 'javascript:void(0)') {
                 e.preventDefault();
-                btn.parentElement.classList.toggle('active');
+            } else if(!btn.parentElement.classList.contains('active')) {
+                e.preventDefault();
             }
-        });
-    });
+            btn.parentElement.classList.toggle('active'); 
+        }
+    }));
 </script>
 </body>
 </html>

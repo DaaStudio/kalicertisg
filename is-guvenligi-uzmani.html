@@ -2,42 +2,34 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>İş Güvenliği Uzmanı | Kalicert İSG</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div class="top-bar">
+    <div class="container"><div class="contact-info"><span><i class="fa-solid fa-phone"></i> 0 (216) 489 08 03</span><span><i class="fa-solid fa-envelope"></i> info@kalicertisg.com</span></div><div class="social-icons"><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook"></i></a></div></div>
+</div>
+
 <header>
     <div class="container">
-        <nav>
-            <div class="logo">KALİCERT<span>İSG</span></div>
-            <button class="menu-toggle" id="menuToggle">
-                <span></span><span></span><span></span>
-            </button>
+        <nav style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+            <a href="index.html" class="logo">KALİCERT<span>İSG</span></a>
+            <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Anasayfa</a></li>
-                <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdown-btn">Hizmetlerimiz ▼</a>
+                <li><a href="index.html">Anasayfa</a></li><li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li class="dropdown"><a href="hizmetlerimiz.html" class="dropdown-btn active">Hizmetlerimiz <i class="fa-solid fa-chevron-down" style="font-size:12px;"></i></a>
                     <div class="dropdown-content">
-                        <a href="is-guvenligi-uzmani.html">İŞ GÜVENLİĞİ UZMANI</a>
-                        <a href="risk-analizi.html">RİSK ANALİZİ & DEĞ.</a>
-                        <a href="acil-durum.html">ACİL DURUM EYLEM PLANI</a>
-                        <a href="temel-isg-egitimi.html">TEMEL İSG EĞİTİMİ</a>
+                        <a href="hizmetlerimiz.html" style="font-weight:700; color:var(--primary-color); border-bottom: 2px solid var(--secondary-color);">Tüm Hizmetlerimiz</a>
+                        <a href="is-guvenligi-uzmani.html" class="active">İş Güvenliği Uzmanı</a><a href="risk-analizi.html">Risk Analizi & Değ.</a><a href="acil-durum.html">Acil Durum Eylem Planı</a><a href="temel-isg-egitimi.html">Temel İSG Eğitimi</a>
                     </div>
                 </li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropdown-btn">Bilgiler ▼</a>
-                    <div class="dropdown-content">
-                        <a href="tehlike-sinifi.html">TEHLİKE SINIFINIZI ÖĞRENİN</a>
-                        <a href="mevzuat.html">MEVZUAT</a>
-                        <a href="calisma-suresi.html">ÇALIŞMA SÜRESİ HES.</a>
-                    </div>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropdown-btn">Bilgiler <i class="fa-solid fa-chevron-down" style="font-size:12px;"></i></a>
+                    <div class="dropdown-content"><a href="tehlike-sinifi.html">Tehlike Sınıfınızı Öğrenin</a><a href="mevzuat.html">Mevzuat</a><a href="calisma-suresi.html">Çalışma Süresi Hes.</a></div>
                 </li>
-                <li><a href="belgelendirme.html">Belgelendirme</a></li>
-                <li><a href="referanslar.html">Referanslarımız</a></li>
-                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="belgelendirme.html">Belgelendirme</a></li><li><a href="iletisim.html">İletişim</a></li>
             </ul>
         </nav>
     </div>
@@ -45,7 +37,7 @@
 
 <main>
     <div class="page-hero">
-        <img src="images/s12.jpg" alt="İş Güvenliği Uzmanı">
+        <img src="images/s12.jpg" alt="İş Güvenliği Uzmanı" onerror="this.src='https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=2070&auto=format&fit=crop'">
         <div class="hero-content">
             <h1>İş Güvenliği Uzmanı Hizmetleri</h1>
             <p>Yasal zorunluluklarınızı yerine getirin, işyerinizi güvence altına alın</p>
@@ -59,38 +51,44 @@
             
             <h2>İş güvenliği uzmanının görevleri</h2>
             <p>İş Güvenliği Uzmanın Görev, Yetki, Sorumluluk ve Eğitimleri Hakkında Yönetmeliği'nin 9. Maddesine göre;</p>
-            <ul>
-                <li><strong>Rehberlik:</strong> İşverene iş sağlığı güvenliği konularında önerilerde bulunmak, iş kazası nedenlerini araştırmak.</li>
-                <li><strong>Risk değerlendirmesi:</strong> Risk analizi çalışmalarına katılmak ve önlemleri takip etmek.</li>
-                <li><strong>Çalışma ortamı gözetimi:</strong> Periyodik kontroller, acil durum planları, tatbikatlar.</li>
-                <li><strong>Eğitim, bilgilendirme ve kayıt:</strong> Çalışanların eğitimlerini planlamak, yıllık değerlendirme raporu hazırlamak.</li>
-                <li><strong>İlgili birimlerle işbirliği:</strong> İşyeri hekimi ve kurulla işbirliği, çalışan temsilcilerine destek.</li>
+            <ul style="list-style: none; padding-left:0;">
+                <li><i class="fa-solid fa-chevron-right" style="color:var(--secondary-color); margin-right:5px;"></i> <strong>Rehberlik:</strong> İşverene iş sağlığı güvenliği konularında önerilerde bulunmak, iş kazası nedenlerini araştırmak.</li>
+                <li><i class="fa-solid fa-chevron-right" style="color:var(--secondary-color); margin-right:5px;"></i> <strong>Risk değerlendirmesi:</strong> Risk analizi çalışmalarına katılmak ve önlemleri takip etmek.</li>
+                <li><i class="fa-solid fa-chevron-right" style="color:var(--secondary-color); margin-right:5px;"></i> <strong>Çalışma ortamı gözetimi:</strong> Periyodik kontroller, acil durum planları, tatbikatlar.</li>
+                <li><i class="fa-solid fa-chevron-right" style="color:var(--secondary-color); margin-right:5px;"></i> <strong>Eğitim, bilgilendirme ve kayıt:</strong> Çalışanların eğitimlerini planlamak, yıllık değerlendirme raporu hazırlamak.</li>
+                <li><i class="fa-solid fa-chevron-right" style="color:var(--secondary-color); margin-right:5px;"></i> <strong>İlgili birimlerle işbirliği:</strong> İşyeri hekimi ve kurulla işbirliği, çalışan temsilcilerine destek.</li>
             </ul>
         </div>
     </div>
 </main>
 
-<footer>
-    <div class="container"><p>© 2026 Kalicert İş Sağlığı ve Güvenliği | Tüm hakları saklıdır.</p></div>
+<a href="https://wa.me/905335930015" class="whatsapp-float" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col"><h4>KALİCERT<span>İSG</span></h4><p>Profesyonel OHS danışmanlık hizmetleri.</p>
+            <div class="social-icons"><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+        </div>
+        <div class="footer-col"><h4>Hızlı Linkler</h4><ul><li><a href="hakkimizda.html">Hakkımızda</a></li><li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li><li><a href="iletisim.html">İletişim</a></li></ul></div>
+        <div class="footer-col"><h4>Hizmetlerimiz</h4><ul><li><a href="is-guvenligi-uzmani.html">İş Güvenliği Uzmanı</a></li><li><a href="risk-analizi.html">Risk Analizi</a></li><li><a href="acil-durum.html">Acil Durum Planı</a></li><li><a href="temel-isg-egitimi.html">İSG Eğitimi</a></li></ul></div>
+        <div class="footer-col"><h4>İletişim</h4><p><i class="fa-solid fa-location-dot"></i> Bağdat caddesi No:198/10 Maltepe/İSTANBUL</p><p><i class="fa-solid fa-phone"></i> 0 (216) 489 08 03</p></div>
+    </div>
+    <div class="footer-bottom"><div class="container"><p>© 2026 Kalicert İş Sağlığı ve Güvenliği | Tüm hakları saklıdır.</p></div></div>
 </footer>
-
 <script>
     const menuToggle = document.getElementById('menuToggle');
     const navLinks = document.getElementById('navLinks');
     const dropdownBtns = document.querySelectorAll('.dropdown-btn');
-
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-
-    dropdownBtns.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            if (window.innerWidth <= 992) {
+    menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+    dropdownBtns.forEach(btn => btn.addEventListener('click', (e) => {
+        if (window.innerWidth <= 992) { 
+            if(btn.getAttribute('href') === 'javascript:void(0)') {
                 e.preventDefault();
-                btn.parentElement.classList.toggle('active');
+            } else if(!btn.parentElement.classList.contains('active')) {
+                e.preventDefault();
             }
-        });
-    });
+            btn.parentElement.classList.toggle('active'); 
+        }
+    }));
 </script>
 </body>
 </html>
